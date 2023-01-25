@@ -1,0 +1,16 @@
+{
+  "listen": ":5566",
+  "cert": "/usr/local/bin/cert.pem",
+  "key": "/usr/local/bin/key.pem",
+  "up_mbps": 100,
+  "down_mbps": 100,
+  "alpn": "h3",
+  "auth": {
+    "mode": "passwords",
+    "config": [
+      "16524cdf-a8d2-42dc-94d2-746696ad4f62"
+    ]
+  },
+  "resolve_preference": "46",
+  "resolver": "tls://dns.google:853"
+}

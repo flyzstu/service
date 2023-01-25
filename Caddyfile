@@ -1,0 +1,18 @@
+{
+  order forward_proxy before file_server
+}
+:444, logs.fly97.fun {
+  tls /usr/local/bin/cert.pem /usr/local/bin/cert.key
+  forward_proxy {
+    basic_auth fly97 16524cdf-a8d2-42dc-94d2-746696ad4f62
+    hide_ip
+    hide_via
+    probe_resistance
+  }
+  file_server {
+    root /index.html
+  }
+  log {
+    output stdout
+  }
+}
