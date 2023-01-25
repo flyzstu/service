@@ -43,6 +43,7 @@ services:
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:4.4.5
     container_name: qbittorrent
+    restart: always
     environment:
       - PUID=0
       - PGID=0
