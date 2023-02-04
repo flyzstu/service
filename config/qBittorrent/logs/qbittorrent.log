@@ -1,0 +1,47 @@
+(N) 2023-02-04T09:21:11 - qBittorrent v4.4.5 started
+(N) 2023-02-04T09:21:11 - Using config directory: /config/qBittorrent
+(I) 2023-02-04T09:21:11 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2023-02-04T09:21:11 - Peer ID: -qB4450-
+(N) 2023-02-04T09:21:11 - HTTP User-Agent is 'qBittorrent/4.4.5'
+(I) 2023-02-04T09:21:11 - DHT support [ON]
+(I) 2023-02-04T09:21:11 - Local Peer Discovery support [ON]
+(I) 2023-02-04T09:21:11 - PeX support [ON]
+(I) 2023-02-04T09:21:11 - Anonymous mode [OFF]
+(I) 2023-02-04T09:21:11 - Encryption support [ON]
+(W) 2023-02-04T09:21:11 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2023-02-04T09:21:11 - Using built-in Web UI.
+(W) 2023-02-04T09:21:11 - Couldn't load Web UI translation for selected locale (C).
+(N) 2023-02-04T09:21:11 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: 127.0.0.1, port: UTP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: 5.75.167.111, port: TCP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: 5.75.167.111, port: UTP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: ::1, port: TCP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: ::1, port: UTP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: 2a01:4f8:c2c:8849::1, port: TCP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: 2a01:4f8:c2c:8849::1, port: UTP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: fe80::9400:1ff:fee1:8025%eth0, port: TCP/6881
+(I) 2023-02-04T09:21:11 - Successfully listening on IP: fe80::9400:1ff:fee1:8025%eth0, port: UTP/6881
+(I) 2023-02-04T09:21:11 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Feb 1 09:23:30 2023.
+(I) 2023-02-04T09:21:11 - Successfully updated IP geolocation database.
+(I) 2023-02-04T09:21:11 - Detected external IP: 5.75.167.111
+(I) 2023-02-04T09:21:13 - Detected external IP: 2a01:4f8:c2c:8849::1
+(N) 2023-02-04T09:22:39 - WebAPI login success. IP: ::ffff:127.0.0.1
+(N) 2023-02-04T09:23:17 - 已成功加载所选地区 (zh) 的 Web UI 翻译。
+(N) 2023-02-04T09:23:17 - Web UI：正在监听 IP：*，端口：8080
+(I) 2023-02-04T09:23:17 - Trying to listen on: 0.0.0.0:17283,[::]:17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: 127.0.0.1, port: TCP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: 127.0.0.1, port: UTP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: 5.75.167.111, port: TCP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: 5.75.167.111, port: UTP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: ::1, port: TCP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: ::1, port: UTP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: 2a01:4f8:c2c:8849::1, port: TCP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: 2a01:4f8:c2c:8849::1, port: UTP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: fe80::9400:1ff:fee1:8025%eth0, port: TCP/17283
+(I) 2023-02-04T09:23:17 - Successfully listening on IP: fe80::9400:1ff:fee1:8025%eth0, port: UTP/17283
+(N) 2023-02-04T09:23:46 - Web UI：正在监听 IP：*，端口：8080
+(N) 2023-02-04T09:24:06 - Web UI：正在监听 IP：*，端口：8080
+(N) 2023-02-04T09:24:16 - Web UI：正在监听 IP：*，端口：8080
+(N) 2023-02-04T09:24:44 - Web UI：正在监听 IP：*，端口：8080
+(I) 2023-02-04T09:28:53 - UPnP / NAT-PMP support [OFF]
