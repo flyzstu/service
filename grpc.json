@@ -24,10 +24,38 @@
   ],
   "outbounds": [
     {
+      "tag": "INTERNET_OUT",
       "protocol": "freedom",
-      "settings":{
-          "domainStrategy":"UseIPv4"
+      "settings": {
+        "domainStrategy": "UseIP"
       }
+    },
+    {
+      "tag": "CLI_OUT",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIPv4"
+      },
+      "sendThrough": "172.16.0.2"
     }
-  ]
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "CLI_OUT",
+        "domain": [
+          "openai",
+          "m-team.cc",
+          "geosite:netflix",
+          "domain:ip.gs"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "INTERNET_OUT",
+        "network": "udp,tcp"
+      }
+    ]
+  }
 }
