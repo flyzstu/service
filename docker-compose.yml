@@ -1,16 +1,5 @@
 version: '3'
 services:
-  naiveproxy:
-    image: ghcr.io/flyzstu/naiveproxy
-    restart: always
-    network_mode: host
-    volumes:
-      - ./Caddyfile:/usr/local/bin/Caddyfile
-      - ./fullchain.cer:/usr/local/bin/cert.pem
-      - ./fly97.fun.key:/usr/local/bin/cert.key
-      - ./index.html:/index.html
-      - /dev/shm:/dev/shm
-    command: --config /usr/local/bin/Caddyfile
   nginx:
     image: nginx
     restart: always
@@ -23,23 +12,6 @@ services:
       - /mnt:/mnt
       - /dev/shm:/dev/shm
       - ./index.html:/index.html
-  grpc:
-    image: ghcr.io/flyzstu/xray
-    restart: always
-    network_mode: host
-    volumes:
-      - ./grpc.json:/usr/local/bin/config.json
-      - /dev/shm:/dev/shm
-    command: -c /usr/local/bin/config.json
-  hysteria:
-    image: ghcr.io/flyzstu/hysteria
-    restart: always
-    network_mode: host
-    volumes:
-      - ./hysteria.json:/usr/local/bin/config.json
-      - ./fullchain.cer:/usr/local/bin/cert.pem
-      - ./fly97.fun.key:/usr/local/bin/key.pem
-    command: -c /usr/local/bin/config.json server
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:4.4.5
     container_name: qbittorrent
@@ -53,7 +25,9 @@ services:
       - ./config:/config
       - /mnt/:/mnt
     network_mode: host
-    deploy:
-      resources:
-        limits:
-         memory: 128M
+  singbox:
+    image: fly97/singbox
+    container_name: singbox
+    restart: always
+    volumes:
+      - ./singbox.json:/usr/local/bin/config.json

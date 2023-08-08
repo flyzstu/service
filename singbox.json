@@ -1,0 +1,44 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": false
+  },
+  "inbounds": [
+    {
+      "type": "shadowtls",
+      "sniff": true,
+      "listen": "127.0.0.1",
+      "listen_port": 444,
+      "version": 3,
+      "users": [
+        {
+          "name": "flyzstu",
+          "password": "potYUsH73ntb5ZiFjLO3iQ=="
+        }
+      ],
+      "handshake": {
+        "server": "updates.cdn-apple.com",
+        "server_port": 443
+      },
+      "detour": "shadowsocks-in"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-in",
+      "listen": "127.0.0.1",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "potYUsH73ntb5ZiFjLO3iQ=="
+    }
+  ],
+    "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+    ]
+}
