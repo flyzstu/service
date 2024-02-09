@@ -11,7 +11,7 @@ sudo snap install docker
 下载相关软件
 
 ```bash
-git clone https://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@github.com/flyzstu/service.git
+git clone https://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@github.com/flyzstu/service.git
 ```
 
 ### hysteria 配置单端口
